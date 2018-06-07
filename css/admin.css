@@ -1,0 +1,25 @@
+.container{
+	min-height: 646px;
+}
+
+#con-left{
+	height: 646px;
+	padding-top: 20px;
+	border-right: solid 1px gainsboro;
+}
+
+#con-right{
+	height: 646px;
+	padding-top: 20px;
+}
+
+#head-titie{
+	border-bottom: 1px solid lightgray;
+	margin-bottom: 10px;
+}
+
+#title,#news-sub,#leibie{
+	box-shadow: none;
+}
+
+

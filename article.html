@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>NEWS</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+	</head>
+
+	<body>
+		<div id="body">
+			<nav class="navbar navbar-expand-md navbar-light">
+				<i class="fa fa-newspaper-o fa-2x"></i> &nbsp;
+				<a class="navbar-brand" href="index.html">NEWS</a>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+				<div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">首页</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">动态</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">今日要闻</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+								关于我们
+							</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">公司介绍</a>
+								<a class="dropdown-item" href="php/cookie.php">管理员入口</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">更多</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="container">
+				<div id="title" align="center">
+					<h1 id="title-con"></h1>
+					<p><span id="aname"></span>&nbsp;&nbsp;<span id="addtime"></span></p>
+				</div>
+				<div id="news-con"></div>
+			</div>
+
+		</div>
+
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script src="js/article.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

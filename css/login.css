@@ -1,0 +1,23 @@
+.container {
+	min-height: 646px;
+}
+
+#welcome {
+	height: 600px;
+	padding-top: 120px;
+}
+
+#loginBoard {
+	height: 600px;
+	padding-top: 180px;
+}
+
+#loginBoard input,
+#loginBoard select {
+	outline: none;
+	box-shadow: none;
+}
+
+#login-btn {
+	width: 100%;
+}

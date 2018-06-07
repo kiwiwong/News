@@ -1,0 +1,19 @@
+#search-div{
+	margin-bottom: 10px;
+}
+#search-div input{
+	box-shadow: none;
+}
+#s-btn{
+	border-radius: 0 6px 6px 0;
+	display: inline;
+}
+
+.img-div{
+	width: 96px;
+}
+
+.cover-img{
+	width: 100%;
+	height: 54px;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" charset="utf-8" />
+		<title>login</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	</head>
+
+	<body>
+		<div class="body">
+			<!--导航栏-->
+			<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+				<i class="fa fa-newspaper-o fa-2x fa-inverse"></i> &nbsp;
+				<a class="navbar-brand" href="#">NEWS</a>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+				<div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">首页</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">动态</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">今日要闻</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+								关于我们
+							</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">公司介绍</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">更多</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<div class="container">
+				<div class="row">
+					<div id="welcome" class="col-md-8 col-lg-8" align="center">
+						<h1 class="display-3">Aha!</h1>
+						<h1 class="display-3">Nice to meet</h1>
+						<h1 class="display-1 font-weight-bold font-italic"><kbd>You</kbd></h1>
+					</div>
+					<div id="loginBoard" class="col-md-4 col-lg-4" align="center">
+						<form action="php/login.php" id="form" method="post">
+							<i class="fa fa-user-circle fa-2x" aria-hidden="true">&nbsp;Administrator</i>
+							<br /><br />
+							
+							<input type="text" id="input-id" class="form-control" name="id" placeholder="ID" /><br />
+							<input type="password" id="input-pwd" class="form-control" name="pwd" placeholder="密码" /><br />
+							
+							<!--<select name="select" id="select" class="form-control">
+								<option value="1">普通管理员</option>
+								<option value="2">超级管理员</option>
+							</select><br />-->
+							
+							<input id="login-btn" type="button" value="登录" class="btn btn-info"/>
+						</form>
+
+					</div>
+				</div>
+			</div>
+			<div class="foot">
+				<nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+					<ul class="navbar-nav">
+						<span class="navbar-text">
+							<i class="fa fa-chrome fa-spin fa-lg" aria-hidden="true"></i>
+						</span>
+						<li class="nav-item">
+						    <a class="nav-link" href="#">News Release System</a>
+						</li>
+                        	
+					</ul>
+				</nav>
+			</div>
+
+		</div>
+
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/login.js"></script>
+
+	</body>
+
+</html>

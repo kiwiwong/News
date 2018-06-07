@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" charset="utf-8" />
+		<title>NEWS</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+
+	<body>
+		<div id="body">
+			<!--导航栏-->
+			<nav class="navbar navbar-expand-md navbar-light">
+				<i class="fa fa-newspaper-o fa-2x"></i> &nbsp;
+				<a class="navbar-brand" href="index.html">NEWS</a>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+				<div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">首页</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">动态</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">今日要闻</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+								关于我们
+							</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">公司介绍</a>
+								<a class="dropdown-item" href="php/cookie.php">管理员入口</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">更多</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<div class="container" align="center">
+				<div class="row" id="main">
+					<div class="col-sm-2 col-md-2 col-lg-2" id="main-left">
+						<h2 class="log-title font-weight-bold">今日新闻</h2>
+						<div id="categories">
+							<p id="tuijian" class="click-btn">推荐</p>
+							<p>热点</p>
+							<p>图片</p>
+							<p>科技</p>
+							<p>娱乐</p>
+							<p>游戏</p>
+							<p>体育</p>
+							<p>军事</p>
+							<p>汽车</p>
+							<p>财经</p>
+							<p>搞笑</p>
+							<p>更多</p>
+						</div>
+					</div>
+
+					<div class="col-sm-7 col-md-7 col-lg-7" id="main-center">
+						<div id="carousel-box" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000">
+
+							<!-- 指示符 -->
+							<ul class="carousel-indicators">
+								<li data-target="#carousel-box" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-box" data-slide-to="1"></li>
+								<li data-target="#carousel-box" data-slide-to="2"></li>
+							</ul>
+
+							<!-- 轮播图片 -->
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="img/img01.jpg" class="carousel-img" />
+									<div class="carousel-caption">
+										<h3>这是第一个新闻标题</h3>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<img src="img/img02.jpg" class="carousel-img" />
+									<div class="carousel-caption">
+										<h3>这是第二个新闻标题</h3>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<img src="img/img03.jpg" class="carousel-img" />
+									<div class="carousel-caption">
+										<h3>这是第三个新闻标题</h3>
+									</div>
+								</div>
+							</div>
+
+							<!-- 左右切换按钮 -->
+							<a class="carousel-control-prev left" href="#carousel-box" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a>
+							<a class="carousel-control-next right" href="#carousel-box" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>
+
+						</div>
+
+						<div id="news"></div>
+					</div>
+
+					<div class="col-sm-3 col-md-3 col-lg-3" id="main-right">
+						<div class="input-group" id="search-div">
+							<input type="text" id="s-input" class="form-control" placeholder="Search News" />
+							<input type="button" class="btn btn-info" id="s-btn" value="搜索" />
+						</div>
+						<div id="hot">
+							<div id="hot-head" align="left">
+								<h5>24小时热闻</h5>
+							</div>
+						</div>
+						<div id="more">
+							<div id="more-head" align="left">
+								<h6>友情链接：</h6>
+							</div>
+							<div id="more-link">
+								<a href="#">央视网</a>&nbsp;
+							    <a href="#">环球网</a>&nbsp;
+							    <a href="#">新浪新闻</a>&nbsp;
+							    <a href="#">网易新闻</a>&nbsp;
+							    <a href="#">百度新闻</a>&nbsp;
+							    <a href="#">腾讯新闻</a>&nbsp;
+							    <a href="#">搜狐新闻</a>&nbsp;
+							    <a href="#">人民日报</a>&nbsp;
+							    <a href="#">今日头条</a>
+							</div>
+							<div id="address" align="left">
+								<h6>地址：江西省南昌市丰和南大道696号</h6>
+							</div>
+							<div id="phone" align="left">
+								<h6>电话：0791-1234-5678</h6>
+							</div>
+							<div id="mail" align="left">
+								<h6>邮箱：123456@news.com</h6>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+			
+		</div>
+
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+
+	</body>
+
+</html>
